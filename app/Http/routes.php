@@ -19,3 +19,17 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('save-post', function()
+{
+  $post = new App\Post;
+  
+  $post->title = 'This is a random title';
+  
+  $post->body = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nisi justo, non tincidunt ex viverra vel. Ut blandit justo at facilisis dapibus. Nam fringilla bibendum diam, sit amet laoreet purus porttitor quis.';
+  
+  $post->save([
+    'user' => Auth::user(),
+    'post' => $post
+    ]);
+});
