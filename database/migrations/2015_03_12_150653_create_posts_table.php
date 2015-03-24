@@ -5,32 +5,33 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreatePostsTable extends Migration {
 
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
-		Schema::dropIfExists('posts');
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::dropIfExists('posts');
 
-		Schema::create('posts', function(Blueprint $table)
-		{
-			$table->increments('id')->comment('Unique identifier');
-			$table->string('title', 128)->comment('Title of the post');
-			$table->text('body')->comment('The entire content of the post');
-			$table->timestamps();
-		});
-	}
+        Schema::create('posts', function(Blueprint $table)
+        {
+            $table->increments('id')->comment('Unique identifier');
+            $table->string('title', 128)->comment('Title of the post');
+            $table->text('body')->comment('The entire content of the post');
+            $table->integer('user_id')->unsigned()->comment('User reference');
+            $table->timestamps();
+        });
+    }
 
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
-		Schema::dropIfExists('posts');
-	}
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('posts');
+    }
 
 }
