@@ -24,6 +24,22 @@ class PostController extends Controller {
     private $skip = 0;
 
     /**
+     * The current logged in user.
+     *
+     * @var
+     */
+    private $user;
+
+    /**
+     * The constructor for the class.
+     */
+    public function __construct()
+    {
+        $this->user = Auth::loginUsingId(1);
+    }
+
+
+    /**
      * Display a listing of the resource.
      *
      * @param Request $request
@@ -31,8 +47,6 @@ class PostController extends Controller {
      */
     public function index(Request $request)
     {
-        $user = Auth::user();
-        dd($user);
         if ($request->input('skip') && is_numeric($request->input('skip'))) {
             $this->skip = $request->input('skip');
         }
@@ -63,7 +77,7 @@ class PostController extends Controller {
      */
     public function store(Request $request)
     {
-        $user = Auth::loginUsingId(1); // temp login in user 1
+        $user = $this->user;
 
         $postData = $request->input();
         $post = new Post;
@@ -102,7 +116,18 @@ class PostController extends Controller {
      */
     public function edit($id)
     {
-        //
+        $user = $this->user;
+        $post = Post::find($id);
+
+        /**
+         * Checking if the logged in user is the owner of the post.
+         */
+        if ($post->user_id != $user->id) {
+            return response([
+                'message' => 'You are not the owner of this article',
+                'data' => $post
+            ], 403);
+        }
     }
 
     /**
@@ -113,7 +138,7 @@ class PostController extends Controller {
      */
     public function update($id)
     {
-        //
+        
     }
 
     /**
@@ -139,10 +164,4 @@ class PostController extends Controller {
 
         Post::destroy($id);
     }
-
-    public function getAllPosts()
-    {
-
-    }
-
 }
