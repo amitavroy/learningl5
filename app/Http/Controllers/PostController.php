@@ -73,17 +73,20 @@ class PostController extends Controller {
     /**
      * Store a newly created resource in storage.
      *
+     * @param Request $request
      * @return Response
      */
     public function store(Request $request)
     {
-        $user = $this->user;
+        $user = $this->user; // get the current user.
 
-        $postData = $request->input();
+        $postData = $request->input(); // fetch the all post data
+
         $post = new Post;
         $post->title = $postData['title'];
         $post->body = $postData['body'];
         $post->user_id = $user->id;
+
         if ($post->save(['user' => User::find(1), 'post' => $post])) {
             return response([
                 'message' => 'Post saved successfully.',
@@ -105,7 +108,12 @@ class PostController extends Controller {
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+        if ($post) {
+            return response(['message' => 'Post found', 'data' => $post], 201);
+        } else {
+            return response(['message' => 'Post not found', 'data' => $id], 500);
+        }
     }
 
     /**
@@ -116,18 +124,7 @@ class PostController extends Controller {
      */
     public function edit($id)
     {
-        $user = $this->user;
-        $post = Post::find($id);
 
-        /**
-         * Checking if the logged in user is the owner of the post.
-         */
-        if ($post->user_id != $user->id) {
-            return response([
-                'message' => 'You are not the owner of this article',
-                'data' => $post
-            ], 403);
-        }
     }
 
     /**
@@ -138,7 +135,7 @@ class PostController extends Controller {
      */
     public function update($id)
     {
-        
+
     }
 
     /**
@@ -152,9 +149,7 @@ class PostController extends Controller {
         $user = Auth::loginUsingId(1);
         $post = Post::find($id);
 
-        /**
-         * Checking if the logged in user is the owner of the post.
-         */
+        // Checking if the logged in user is the owner of the post.
         if ($post->user_id != $user->id) {
             return response([
                 'message' => 'You are not the owner of this article',
@@ -163,5 +158,10 @@ class PostController extends Controller {
         }
 
         Post::destroy($id);
+
+        return response([
+            'message' => 'Post deleted.',
+            'data' => $id
+        ], 201);
     }
 }
