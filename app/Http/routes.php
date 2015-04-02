@@ -11,25 +11,19 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
+/*Route::get('home', 'HomeController@index');
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);*/
 
-Route::get('save-post', function()
-{
-  $post = new App\Post;
-  
-  $post->title = 'This is a random title';
-  
-  $post->body = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nisi justo, non tincidunt ex viverra vel. Ut blandit justo at facilisis dapibus. Nam fringilla bibendum diam, sit amet laoreet purus porttitor quis.';
-  
-  $post->save([
-    'user' => Auth::user(),
-    'post' => $post
-    ]);
+/*Global routes*/
+Route::get('/', 'WelcomeController@index');
+Route::get('get-token', 'GlobalController@getCSRFToken');
+
+/*Posts*/
+Route::resource('post', 'PostController');
+Route::group(['prefix' => 'post'], function() {
+//    Route::get('list', 'PostController@getAllPosts');
 });
