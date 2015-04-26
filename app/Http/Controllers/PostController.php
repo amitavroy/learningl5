@@ -55,7 +55,11 @@ class PostController extends Controller {
             $this->take = $request->input('take');
         }
 
-        $post = Post::take($this->take)->skip($this->skip)->get();
+        $post = Post::take($this->take)
+            ->skip($this->skip)
+            ->orderBy('created_at', 'desc')
+            ->orderBy('id', 'desc')
+            ->get();
 
         return $post;
     }
