@@ -18,6 +18,10 @@ class DatabaseSeeder extends Seeder {
 
         $this->call('PostSeeder');
 
+        $this->call('OAuthClientsSeeder');
+        
+        $this->call('OAuthUsersSeeder');
+
     }
 
 }
