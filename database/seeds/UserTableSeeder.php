@@ -16,6 +16,12 @@ class UserTableSeeder extends Seeder {
         // first truncate the table
         DB::table('users')->truncate();
 
+        $user = new User;
+        $user->name = 'Amitav Roy';
+        $user->email = 'reachme@amitavroy.com';
+        $user->password = Hash::make('pass');
+        $user->save();
+
         // create the instance of faker
         $faker = Faker\Factory::create();
 

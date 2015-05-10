@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\MyPDO;
+
 App::singleton('oauth2', function() {
     
-    $storage = new OAuth2\Storage\Pdo(array(
+    $storage = new MyPDO(array(
         'dsn' => 'mysql:dbname=learningl5;host=localhost', 
         'username' => 'root', 
         'password' => 'password'));
@@ -15,15 +17,7 @@ App::singleton('oauth2', function() {
     return $server;
 });
 
-Route::post('oauth/token', function()
-{
-    $bridgedRequest  = OAuth2\HttpFoundationBridge\Request::createFromRequest(Request::instance());
-    $bridgedResponse = new OAuth2\HttpFoundationBridge\Response();
-    
-    $bridgedResponse = App::make('oauth2')->handleTokenRequest($bridgedRequest, $bridgedResponse);
-    
-    return $bridgedResponse;
-});
+Route::post('oauth/token', 'OAuthController@getOAuthToken');
 
 /*Global routes*/
 Route::get('/', 'WelcomeController@index');
