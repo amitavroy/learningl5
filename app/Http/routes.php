@@ -24,7 +24,6 @@ Route::get('/', 'WelcomeController@index');
 Route::get('get-token', 'GlobalController@getCSRFToken');
 
 /*Posts*/
-Route::resource('post', 'PostController');
 Route::group(['prefix' => 'post'], function() {
-//    Route::get('list', 'PostController@getAllPosts');
+    post('list', 'PostController@getAllPosts');
 });
