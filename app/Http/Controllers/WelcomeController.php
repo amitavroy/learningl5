@@ -1,5 +1,9 @@
 <?php namespace App\Http\Controllers;
 
+use Facebook\FacebookRedirectLoginHelper;
+use Facebook\FacebookSession;
+use Illuminate\Http\Request;
+
 class WelcomeController extends Controller {
 
     /*
@@ -29,7 +33,19 @@ class WelcomeController extends Controller {
      */
     public function index()
     {
-        return view('pages.home');
+        session_start();
+        FacebookSession::setDefaultApplication(env('FB_APP_ID'), env('FB_APP_SECRET'));
+        $helper = new FacebookRedirectLoginHelper(env('FB_URL'));
+        $fb_loginUrl = $helper->getLoginUrl(array(
+            'scope' => 'email'
+        ));
+
+        return view('pages.home')->with('fb_loginUrl', $fb_loginUrl);
+    }
+
+    public function getFBPostData(Request $request)
+    {
+        dump($request->input());
     }
 
 }

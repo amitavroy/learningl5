@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <button class="btn btn-material-teal-300" ng-click="loadMore()">Load more</button>
+                <a href="{{ $fb_loginUrl  }}" class="btn btn-material-teal-300">Facebook Login</a>
             </div>
         </div>
     </div>

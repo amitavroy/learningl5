@@ -21,8 +21,7 @@ Route::post('oauth/token', 'OAuthController@getOAuthToken');
 
 /*Global routes*/
 Route::get('/', 'WelcomeController@index');
-Route::get('get-token', 'GlobalController@getCSRFToken');
-
+get('fb/login', 'WelcomeController@getFBPostData');
 /*Posts*/
 Route::group(['prefix' => 'post'], function() {
     post('list', 'PostController@getAllPosts');
