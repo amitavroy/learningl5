@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <a href="{{ $fb_loginUrl  }}" class="btn btn-material-teal-300">Facebook Login</a>
+                <a href="{{ $fb_loginUrl  }}" class="btn btn-material-blue-800">Facebook Login</a>
             </div>
         </div>
     </div>
