@@ -13,6 +13,7 @@ App::singleton('oauth2', function() {
     
     $server->addGrantType(new OAuth2\GrantType\ClientCredentials($storage));
     $server->addGrantType(new OAuth2\GrantType\UserCredentials($storage));
+    $server->addGrantType(new App\Http\OAuth\FacebookGrantType($storage));
     
     return $server;
 });
