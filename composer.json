@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "laravel/framework": "5.0.*",
+    "laravel/framework": "5.1.*",
     "fzaninotto/faker": "dev-master",
     "bshaffer/oauth2-server-php": "~1.7",
     "bshaffer/oauth2-server-httpfoundation-bridge": "~1.1",
