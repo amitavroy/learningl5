@@ -12,6 +12,7 @@ class Kernel extends ConsoleKernel {
 	 */
 	protected $commands = [
 		'App\Console\Commands\Inspire',
+		'App\Console\Commands\LogDemo',
 	];
 
 	/**
@@ -24,6 +25,8 @@ class Kernel extends ConsoleKernel {
 	{
 		$schedule->command('inspire')
 				 ->hourly();
+
+		$schedule->command('log:demo')->everyMinute();
 	}
 
 }
