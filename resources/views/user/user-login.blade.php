@@ -24,3 +24,15 @@
     </form>
 </div>
 @endsection
+
+@section('scripts')
+@parent
+<script type="text/javascript">
+    $(document).ready(function() {
+        var messageContainer = $('.alert-danger');
+        if (messageContainer.length > 0) {
+            $('.jumbotron').addClass('animated').addClass('shake');
+        }
+    });
+</script>
+@endsection
