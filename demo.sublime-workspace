@@ -1,0 +1,1040 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"place",
+				"$places〔variable〕"
+			],
+			[
+				"drag",
+				"draggedLong〔variable〕"
+			],
+			[
+				"dragg",
+				"draggedLat〔variable〕"
+			],
+			[
+				"ge",
+				"geometry"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"la",
+				"latLng"
+			],
+			[
+				"PLace",
+				"PlacesController@getMapIframe"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"print",
+				"print_r〔function〕"
+			],
+			[
+				"name",
+				"$nameChanged〔variable〕"
+			],
+			[
+				"chan",
+				"changed"
+			],
+			[
+				"curren",
+				"current_password"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"ac",
+				"actingAs〔function〕"
+			],
+			[
+				"c",
+				"click〔function〕"
+			],
+			[
+				"bs",
+				"bsfrmgrp	bsformgroup"
+			],
+			[
+				"User",
+				"UserController@doLogin"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"curr",
+				"$currentUser〔variable〕"
+			],
+			[
+				"passwor",
+				"passwords"
+			],
+			[
+				"change",
+				"changePasswordScreen"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"th",
+				"$this〔variable〕"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"pub",
+				"public"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"com",
+				"comment"
+			],
+			[
+				"uni",
+				"unique"
+			],
+			[
+				"fora",
+				"foreach	foreach …"
+			],
+			[
+				"last",
+				"lastDate"
+			],
+			[
+				"tot",
+				"totalComments"
+			],
+			[
+				"tota",
+				"totalSubscribers"
+			],
+			[
+				"total",
+				"total_subscribers"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"totl",
+				"totals"
+			],
+			[
+				"estimated",
+				"estimated_earning"
+			],
+			[
+				"youtube",
+				"youtube_stats_daily"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"ear",
+				"earnings"
+			],
+			[
+				"earnin",
+				"earningData"
+			],
+			[
+				"test",
+				"testString"
+			],
+			[
+				"earning",
+				"earningData"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"star",
+				"startDate"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"getV",
+				"getVideoDailyReport"
+			],
+			[
+				"video",
+				"videoViews"
+			],
+			[
+				"youtub",
+				"youtube_stats_daily"
+			],
+			[
+				"us",
+				"userPassedParam"
+			],
+			[
+				"photoSet",
+				"photoSetId"
+			],
+			[
+				"deve",
+				"deviceId"
+			],
+			[
+				"log",
+				"log_info"
+			],
+			[
+				"me",
+				"message"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/partials/nav.blade.php",
+			"settings":
+			{
+				"buffer_size": 2383,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 1266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/UserController.php",
+			"settings":
+			{
+				"buffer_size": 4693,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 192.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insl",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/data/Code/allsites",
+		"/Volumes/data/Code/allsites/app/Http/Controllers",
+		"/Volumes/data/Code/allsites/resources",
+		"/Volumes/data/Code/allsites/resources/views",
+		"/Volumes/data/Code/allsites/resources/views/user"
+	],
+	"file_history":
+	[
+		"/Volumes/data/Code/allsites/resources/views/user/user-editprofile.blade.php",
+		"/Volumes/data/Code/allsites/app/Http/routes.php",
+		"/Volumes/data/Code/allsites/app/Http/Controllers/PlacesController.php",
+		"/Volumes/data/Code/allsites/resources/views/places/add-place.blade.php",
+		"/Volumes/data/Code/allsites/resources/views/places/map-partial.blade.php",
+		"/Volumes/data/Code/allsites/.gitignore",
+		"/Volumes/data/Code/allsites/.env",
+		"/Volumes/data/Code/allsites/resources/views/partials/nav.blade.php",
+		"/Volumes/data/Code/allsites/resources/views/user/user-dashboard.blade.php",
+		"/Volumes/data/Code/allsites/app/Http/Controllers/UserController.php",
+		"/Volumes/data/Code/allsites/app/Places.php",
+		"/Volumes/data/Code/allsites/app/Providers/RouteServiceProvider.php",
+		"/Volumes/data/Code/allsites/storage/logs/laravel.log",
+		"/Volumes/data/Code/allsites/resources/views/master.blade.php",
+		"/Volumes/data/Code/allsites/app/Http/Requests/Request.php",
+		"/Volumes/data/Code/allsites/tests/UserModuleTest.php",
+		"/Volumes/data/Code/allsites/tests/TestCase.php",
+		"/Volumes/data/Code/allsites/resources/views/user/user-login.blade.php",
+		"/Volumes/data/Code/allsites/gulpfile.js",
+		"/Volumes/data/Code/allsites/config/database.php",
+		"/Volumes/data/Code/allsites/phpunit.xml",
+		"/Volumes/data/Code/allsites/composer.json",
+		"/Volumes/data/Code/allsites/tests/ExampleTest.php",
+		"/Volumes/data/Code/allsites/app/User.php",
+		"/Users/amitav/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/amitav/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/data/Code/allsites/database/migrations/2015_07_04_123449_create_places_table.php",
+		"/Volumes/data/Code/allsites/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/Volumes/data/Code/allsites/readme.md",
+		"/Volumes/data/Code/allsites/resources/views/user/user-changepasswd.blade.php",
+		"/Volumes/data/Code/allsites/app/Http/Middleware/Authenticate.php",
+		"/Users/amitav/Library/Application Support/Sublime Text 3/Packages/User/html/laravel-form.sublime-snippet",
+		"/Users/amitav/Library/Application Support/Sublime Text 3/Packages/User/html/bsformgroup.sublime-snippet",
+		"/Volumes/data/Code/allsites/resources/assets/js/app.js",
+		"/Volumes/data/Code/allsites/public/js/vendor/vendor.js",
+		"/Users/amitav/Library/Application Support/Sublime Text 3/Packages/User/Default.sublime-keymap",
+		"/Users/amitav/Library/Application Support/Sublime Text 3/Packages/phpfmt/Default.sublime-keymap",
+		"/Volumes/data/Code/allsites/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php",
+		"/Volumes/data/Code/allsites/database/seeds/UserTableSeeder.php",
+		"/Volumes/data/Code/allsites/.gitattributes",
+		"/Volumes/data/Code/allsites/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php",
+		"/Volumes/data/Code/allsites/database/seeds/DatabaseSeeder.php",
+		"/Users/amitav/Documents/Code/homestead/src/stubs/Homestead.yaml",
+		"/Volumes/data/Code/pmtools/gulpfile.js",
+		"/Volumes/data/Code/pmtools/resources/views/master.blade.php",
+		"/Volumes/html/unclickd/storage/logs/laravel.log",
+		"/Volumes/html/unclickd/app/Unclickd/DistList.php",
+		"/Volumes/html/unclickd/storage/logs/app-warnings.log",
+		"/Volumes/html/unclickd/storage/logs/app-event.log",
+		"/Users/amitav/Documents/Code/unclickd/app/Http/Controllers/RestCtrl.php",
+		"/Users/amitav/Downloads/pmtools_2015-07-02.sql",
+		"/Users/amitav/.homestead/Homestead.yaml",
+		"/Users/amitav/Downloads/sunpharma_google_analytics.sql",
+		"/Users/amitav/Documents/Code/unclickd/.env",
+		"/Volumes/data/Code/pmtools/app/Http/routes.php",
+		"/Volumes/data/Code/pmtools/app/Http/Controllers/TimeEntryController.php",
+		"/Volumes/data/Code/pmtools/app/Http/Controllers/UserController.php",
+		"/Volumes/data/Code/pmtools/app/Modules/TimeEntry/WeeklyReport.php",
+		"/Volumes/data/Code/pmtools/resources/views/reports/weekly-report-add.blade.php",
+		"/Volumes/data/Code/pmtools/app/User.php",
+		"/Volumes/data/Code/pmtools/resources/views/partials/nav.blade.php",
+		"/Volumes/data/Code/pmtools/resources/views/user/add-user.blade.php",
+		"/Volumes/data/Code/pmtools/database/seeds/UserSeeder.php",
+		"/Volumes/data/Code/pmtools/resources/assets/js/app.js",
+		"/Users/amitav/Documents/Code/amitavroy/app/Providers/RouteServiceProvider.php",
+		"/Users/amitav/Documents/Code/amitavroy/app/Utils/FileManager.php",
+		"/Users/amitav/Documents/Code/amitavroy/composer.json",
+		"/Users/amitav/Documents/Code/amitavroy/database/seeds/UserSeeder.php",
+		"/Users/amitav/Documents/Code/amitavroy/database/seeds/DatabaseSeeder.php",
+		"/Volumes/data/Code/pmtools/app/Http/Controllers/Auth/AuthController.php",
+		"/Volumes/data/Code/pmtools/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/Volumes/data/Code/pmtools/database/migrations/2015_06_27_081023_create_weekly_time_table.php",
+		"/Volumes/data/Code/pmtools/database/migrations/2015_06_27_080750_create_developers_table.php",
+		"/Volumes/data/Code/pmtools/.env",
+		"/Users/amitav/Documents/Code/amitavroy/database/migrations/2015_06_23_150229_create_tags_table.php",
+		"/Users/amitav/Documents/Code/amitavroy/database/migrations/2015_06_23_150144_create_articles_table.php",
+		"/Users/amitav/Documents/Code/amitavroy/database/migrations/2015_06_23_150007_create_node_table.php",
+		"/Users/amitav/Documents/Code/amitavroy/resources/views/master.blade.php",
+		"/Users/amitav/Documents/Code/amitavroy/gulpfile.js",
+		"/Users/amitav/Documents/Code/amitavroy/public/build/rev-manifest.json",
+		"/Users/amitav/Documents/Code/amitavroy/app/Http/routes.php",
+		"/Users/amitav/Documents/Code/amitavroy/resources/views/youtube/youtube-stats.blade.php",
+		"/Users/amitav/Documents/Code/amitavroy/resources/assets/js/factories/httpFact.js",
+		"/Users/amitav/Documents/Code/amitavroy/app/Http/Controllers/RestController.php",
+		"/Volumes/data/Code/learningl5/storage/logs/laravel-2015-06-20.log",
+		"/Volumes/data/Code/learningl5/app/Console/Kernel.php",
+		"/Volumes/data/Code/learningl5/app/Console/Commands/LogDemo.php",
+		"/Volumes/data/Code/learningl5/vendor/nesbot/carbon/src/Carbon/Carbon.php",
+		"/Volumes/data/Code/learningl5/app/Http/routes.php",
+		"/Volumes/data/Code/learningl5/app/Http/Controllers/WelcomeController.php",
+		"/Volumes/data/Code/learningl5/composer.json",
+		"/Volumes/data/Code/learningl5/app/Jobs/Job.php",
+		"/Volumes/data/Code/learningl5/config/app.php",
+		"/Volumes/data/Code/learningl5/public/index.php",
+		"/Volumes/data/Code/learningl5/learningl5.sublime-project",
+		"/Volumes/data/Code/learningl5/bootstrap/autoload.php",
+		"/Volumes/data/Code/learningl5/bootstrap/cache/.gitignore",
+		"/Volumes/data/Code/learningl5/app/Console/Commands/TrailLog.php",
+		"/Volumes/data/Code/learningl5/.env",
+		"/Volumes/html/unclickd_dev/app/Http/routes.php",
+		"/Volumes/html/unclickd_dev/app/Http/Controllers/RestCtrl.php",
+		"/Volumes/html/unclickd_dev/app/Providers/RouteServiceProvider.php",
+		"/Volumes/html/unclickd_dev/composer.json",
+		"/Volumes/html/unclickd/app/Handlers/Events/PhotosetResponseNotification.php",
+		"/Volumes/html/unclickd/app/Unclickd/Photoset.php",
+		"/Volumes/html/unclickd/app/Handlers/Events/HandleSavePhotoSetUserResponse.php",
+		"/Volumes/html/unclickd/app/Helpers/GlobalHelper.php",
+		"/Volumes/html/unclickd/app/Http/Controllers/RestCtrl.php",
+		"/Volumes/html/unclickd/app/Events/EventSendPhotoSetToContacts.php",
+		"/Volumes/html/unclickd/app/Handlers/Events/HandleSendPhotoSetToContacts.php",
+		"/Volumes/html/unclickd/app/Http/routes.php",
+		"/Volumes/html/unclickd/app/Unclickd/Photos.php",
+		"/Volumes/html/unclickd/app/Providers/EventServiceProvider.php",
+		"/Volumes/html/unclickd/storage/logs/laravel-2015-06-18.log",
+		"/Volumes/html/unclickd/app/Events/PhotosetResponseReceived.php",
+		"/Volumes/html/unclickd/app/Events/EventSavePhotoSetUserResponse.php",
+		"/Volumes/eichergitrepo/sites/all/libraries/eicher/audit_update.php",
+		"/Volumes/eichergitrepo/sites/all/modules/device_action/device_action.module",
+		"/Volumes/eichergitrepo/sites/default/settings.php",
+		"/Users/amitav/Dropbox/Working/youtube_stats.sql",
+		"/Users/amitav/Documents/Code/rnd/decorator.php",
+		"/Users/amitav/Downloads/homestead/src/stubs/Homestead.yaml",
+		"/Volumes/html/unclickd/app/Http/Controllers/DistListCtrl.php",
+		"/Volumes/html/unclickd/app/Providers/RouteServiceProvider.php"
+	],
+	"find":
+	{
+		"height": 72.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.l",
+			"Auth::user",
+			"location_name",
+			"Illuminate\\Support\\Facades",
+			"amitavroy",
+			"app\namitavroy",
+			"app",
+			"savePhotoSetUserResponse",
+			"The photset was not crated",
+			"Photoset not created",
+			"log_info",
+			"EventSavePhotoSetUserResponse",
+			"update_audit",
+			"device_action_test_pager",
+			"device_action"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"pmtools"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/partials/nav.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1512,
+								2283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 453.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								700,
+								721
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Http/Controllers/UserController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4292,
+								4292
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "demo.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"user-editprofile",
+				"resources/views/user/user-editprofile.blade.php"
+			],
+			[
+				"usercontr",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				"ro",
+				"app/Http/routes.php"
+			],
+			[
+				"nav",
+				"resources/views/partials/nav.blade.php"
+			],
+			[
+				"rout",
+				"app/Http/routes.php"
+			],
+			[
+				".e",
+				".env"
+			],
+			[
+				"map",
+				"resources/views/places/map-partial.blade.php"
+			],
+			[
+				"add",
+				"resources/views/places/add-place.blade.php"
+			],
+			[
+				"add-place",
+				"resources/views/places/add-place.blade.php"
+			],
+			[
+				"place",
+				"app/Http/Controllers/PlacesController.php"
+			],
+			[
+				"dashb",
+				"resources/views/user/user-dashboard.blade.php"
+			],
+			[
+				"places",
+				"app/Places.php"
+			],
+			[
+				"usercon",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				"usercontro",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				"route",
+				"app/Http/routes.php"
+			],
+			[
+				"routes",
+				"app/Providers/RouteServiceProvider.php"
+			],
+			[
+				"master",
+				"resources/views/master.blade.php"
+			],
+			[
+				".gitn",
+				".gitignore"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"login.",
+				"resources/views/user/user-login.blade.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"nav.blade",
+				"resources/views/partials/nav.blade.php"
+			],
+			[
+				"create_placs",
+				"database/migrations/2015_07_04_123449_create_places_table.php"
+			],
+			[
+				"create_user",
+				"database/migrations/2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"create_places",
+				"database/migrations/2015_07_04_123449_create_places_table.php"
+			],
+			[
+				"rou",
+				"app/Http/routes.php"
+			],
+			[
+				"read",
+				"readme.md"
+			],
+			[
+				"changepa",
+				"resources/views/user/user-changepasswd.blade.php"
+			],
+			[
+				"login",
+				"resources/views/user/user-login.blade.php"
+			],
+			[
+				"nav.",
+				"resources/views/partials/nav.blade.php"
+			],
+			[
+				"user-log",
+				"resources/views/user/user-login.blade.php"
+			],
+			[
+				"uercon",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				"auth",
+				"vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php"
+			],
+			[
+				".gita",
+				".gitattributes"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"usertab",
+				"database/seeds/UserTableSeeder.php"
+			],
+			[
+				"hash",
+				"vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php"
+			],
+			[
+				"user",
+				"app/User.php"
+			],
+			[
+				"laravel",
+				"storage/logs/laravel.log"
+			],
+			[
+				"",
+				"database/migrations/2014_10_12_000000_create_users_table.php"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"create_us",
+				"database/migrations/2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"authen",
+				"app/Http/Middleware/Authenticate.php"
+			],
+			[
+				"user-login",
+				"resources/views/user/user-login.blade.php"
+			],
+			[
+				"usercont",
+				"app/Http/Controllers/UserController.php"
+			],
+			[
+				".htace",
+				"public/.htaccess"
+			],
+			[
+				"gulpfil",
+				"gulpfile.js"
+			],
+			[
+				"distlistctrl",
+				"app/Http/Controllers/DistListCtrl.php"
+			],
+			[
+				"distlist",
+				"app/Unclickd/DistList.php"
+			],
+			[
+				"restctr",
+				"app/Http/Controllers/RestCtrl.php"
+			],
+			[
+				"app",
+				"resources/assets/js/app.js"
+			],
+			[
+				"gulpfile",
+				"gulpfile.js"
+			],
+			[
+				"gulpf",
+				"gulpfile.js"
+			],
+			[
+				"compos",
+				"composer.json"
+			],
+			[
+				"youtubecontroller",
+				"app/Http/Controllers/YoutubeController.php"
+			],
+			[
+				"create_deve",
+				"database/migrations/2015_06_27_080750_create_developers_table.php"
+			],
+			[
+				"yout",
+				"resources/views/youtube/youtube-stats.blade.php"
+			],
+			[
+				"youub",
+				"app/YoutubeStats.php"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"youtube",
+				"resources/views/youtube/youtube-stats.blade.php"
+			],
+			[
+				"httpfact",
+				"resources/assets/js/factories/httpFact.js"
+			],
+			[
+				"youtu",
+				"app/YoutubeStats.php"
+			],
+			[
+				"restcon",
+				"app/Http/Controllers/RestController.php"
+			],
+			[
+				"carbon",
+				"vendor/nesbot/carbon/src/Carbon/Carbon.php"
+			],
+			[
+				"welcome",
+				"app/Http/Controllers/WelcomeController.php"
+			],
+			[
+				"autoload",
+				"bootstrap/autoload.php"
+			],
+			[
+				"restc",
+				"app/Http/Controllers/RestCtrl.php"
+			],
+			[
+				"photoset",
+				"app/Unclickd/Photoset.php"
+			],
+			[
+				"photosetresponsenotification.php",
+				"app/Handlers/Events/PhotosetResponseNotification.php"
+			],
+			[
+				"eventsavephotosetuserresponse",
+				"app/Handlers/Events/HandleSavePhotoSetUserResponse.php"
+			],
+			[
+				"eventsendphotosettocontacts",
+				"app/Events/EventSendPhotoSetToContacts.php"
+			],
+			[
+				"photos",
+				"app/Unclickd/Photos.php"
+			],
+			[
+				"app-eve",
+				"storage/logs/app-event.log"
+			],
+			[
+				"photo",
+				"app/Unclickd/Photos.php"
+			],
+			[
+				"photosetresponsenotification",
+				"app/Handlers/Events/PhotosetResponseNotification.php"
+			],
+			[
+				"aud",
+				"libraries/eicher/audit_update.php"
+			],
+			[
+				"device_act",
+				"modules/device_action/device_action.module"
+			],
+			[
+				"audi",
+				"libraries/eicher/audit_update.php"
+			],
+			[
+				"dist",
+				"app/Http/Controllers/DistListCtrl.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/data/Code/allsites/demo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
