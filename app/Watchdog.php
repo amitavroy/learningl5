@@ -34,4 +34,14 @@ class Watchdog extends Model
      * @var integer
      */
     protected $maxRecords = 100;
+
+    /**
+     * Get the max records of watchdog entries.
+     *
+     * @return int
+     */
+    public function getMaxRecords()
+    {
+        return $this->maxRecords;
+    }
 }
