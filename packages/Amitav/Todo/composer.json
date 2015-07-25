@@ -1,0 +1,20 @@
+{
+    "name": "amitav/todo",
+    "description": "A small Todo App",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amitav Roy",
+            "email": "reachme@amitavroy.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Amitav\\Todo\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    }
+}
