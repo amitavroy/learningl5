@@ -1,1 +1,15 @@
-{"version":3,"sources":["custom.less","custom.css"],"names":[],"mappings":"AAAA;EAEI,kBAAA;ECAH;AACD,yCAAwC;ADIxC;EACE,cAAA;EACA,eAAA;EACA,mBAAA;EACA,oBAAA;EACA,oBAAA;ECFD;ADKD;EACE,qBAAA;ECHD;ADMD;EACE,aAAA;EACA,oBAAA;EACA,iBAAA;EACA,cAAA;EACA,aAAA;EAGA,oBAAA;ECJD;ADOD;EACE,mBAAA;ECLD;ADQD;EACE,oBAAA;EACA,aAAA;EACA,gBAAA;ECND;ADSD;EACE,gBAAA;ECPD","file":"app.css","sourcesContent":[".navbar-header {\n  .site-logo {\n    margin-top: 11px;\n  }\n}\n\n/*Custom Styling of the image uploader*/\n#drop-area-div {\n  width: 400px;\n  height: 180px;\n  border: 1px solid;\n  text-align: center;\n  padding-top: 120px;\n}\n\n#demo-files > div {\n  margin-bottom: 10px;\n}\n\nimg.demo-image-preview {\n  float: left;\n  margin-right: 10px;\n  margin-top: 4px;\n  height: 56px;\n  width: 56px;\n  -webkit-border-radius: 4px;\n  -moz-border-radius: 4px;\n  border-radius: 4px;\n}\n\n.demo-file-id {\n  font-weight: bold;\n}\n\n.demo-file-size {\n  font-style: italic;\n  color: gray;\n  font-size: 90%;\n}\n\n.demo-file-status-success {\n  color: #009900;\n}",null],"sourceRoot":"/source/"}
+{
+  "version": 3,
+  "sources": [
+    "custom.less",
+    "custom.css"
+  ],
+  "names": [],
+  "mappings": "AAAA;EAEI,kBAAA;ECAH;AACD,yCAAwC;ADIxC;EACE,cAAA;EACA,eAAA;EACA,mBAAA;EACA,oBAAA;EACA,oBAAA;EACA,yDAAA;EACA,8BAAA;EACA,iCAAA;EACA,8BAAA;ECFD;ADPD;EAWI,aAAA;EACA,oBAAA;EACA,WAAA;ECDH;ADKD;EACE,qBAAA;ECHD;ADMD;EACE,aAAA;EACA,oBAAA;EACA,iBAAA;EACA,cAAA;EACA,aAAA;EAGA,oBAAA;ECJD;ADOD;EACE,mBAAA;ECLD;ADQD;EACE,oBAAA;EACA,aAAA;EACA,gBAAA;ECND;ADSD;EACE,gBAAA;ECPD",
+  "file": "app.css",
+  "sourcesContent": [
+    ".navbar-header {\n  .site-logo {\n    margin-top: 11px;\n  }\n}\n\n/*Custom Styling of the image uploader*/\n#drop-area-div {\n  width: 400px;\n  height: 180px;\n  border: 1px solid;\n  text-align: center;\n  padding-top: 120px;\n  background-image: url(\"../../images/drag_and_drop.png\");\n  background-repeat: no-repeat;\n  background-position: -4px -49px;\n  background-size: 407px 253px;\n  input {\n    left: 119px;\n    position: relative;\n    top: 27px;\n  }\n}\n\n#demo-files > div {\n  margin-bottom: 10px;\n}\n\nimg.demo-image-preview {\n  float: left;\n  margin-right: 10px;\n  margin-top: 4px;\n  height: 56px;\n  width: 56px;\n  -webkit-border-radius: 4px;\n  -moz-border-radius: 4px;\n  border-radius: 4px;\n}\n\n.demo-file-id {\n  font-weight: bold;\n}\n\n.demo-file-size {\n  font-style: italic;\n  color: gray;\n  font-size: 90%;\n}\n\n.demo-file-status-success {\n  color: #009900;\n}",
+    null
+  ],
+  "sourceRoot": "/source/"
+}

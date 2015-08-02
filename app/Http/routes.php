@@ -31,6 +31,10 @@ Route::get('places/map', 'PlacesController@getMapIframe');
 Route::post('geo_location', 'PlacesController@saveUserLocation');
 Route::get('api/my-places', 'PlacesController@getMyPlaceJSON');
 
-// jQuery File upload
-Route::get('image/upload', 'WelcomeController@getImageUpload');
-Route::post('image/do-upload', 'WelcomeController@doImageUpload');
+// Gallery and photo view
+Route::get('gallery/list', 'GalleryController@viewGalleryList');
+Route::post('gallery/save', 'GalleryController@saveGallery');
+Route::get('gallery/view/{id}', 'GalleryController@viewGalleryPics');
+
+Route::get('image/upload', 'GalleryController@getImageUpload');
+Route::post('image/do-upload', 'GalleryController@doImageUpload');
