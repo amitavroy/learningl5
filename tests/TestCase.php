@@ -15,9 +15,9 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function setUp()
     {
-        parent::setUp();
-        Artisan::call('migrate'); // set up the database on sqlite
-        Artisan::call('db:seed'); // add dummy data for seed
+//        parent::setUp();
+//        Artisan::call('migrate'); // set up the database on sqlite
+//        Artisan::call('db:seed'); // add dummy data for seed
     }
 
     /**
