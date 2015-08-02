@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Gallery;
+use App\Photo;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
@@ -44,9 +45,23 @@ class GalleryController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * This is the page where all the photos of a gallery
+     * will be visible and user can add more photos
+     * using the drag and drop interface.
+     *
+     * @param $id
+     * @return $this
+     */
     public function viewGalleryPics($id)
     {
         $gallery = Gallery::find($id);
+
+        // If id not valid, throw an error
+        // saying the gallery does not exist.
+        if (!$gallery) {
+            \App::abort(500, 'Gallery with this id does not exist.');
+        }
 
         return view('gallery.gallery-full')
             ->with('gallery', $gallery);
@@ -70,6 +85,21 @@ class GalleryController extends Controller
     public function doImageUpload(Request $request)
     {
         $postData = $request->file('file');
-        return $postData;
+
+        // sanitizing the file name using the helper function
+        $fileName = sanitize($postData->getClientOriginalName(), true);
+
+        // moving the file to destination path
+        $postData->move('uploads', $fileName);
+
+        $photo = new Photo;
+        $photo->file_name = $fileName;
+        $photo->file_size = $postData->getClientSize();
+        $photo->file_mime = $postData->getClientMimeType();
+        $photo->path = 'uploads/' . $fileName;
+        $photo->created_by = 1;
+        $photo->save();
+
+        return $photo;
     }
 }
