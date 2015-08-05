@@ -92,6 +92,7 @@ class GalleryController extends Controller
         // moving the file to destination path
         $postData->move('uploads', $fileName);
 
+        // saving the photo details to the DB
         $photo = new Photo;
         $photo->file_name = $fileName;
         $photo->file_size = $postData->getClientSize();
@@ -100,6 +101,7 @@ class GalleryController extends Controller
         $photo->created_by = 1;
         $photo->save();
 
+        // return the details of the DB entry back to the user
         return $photo;
     }
 }

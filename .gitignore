@@ -4,3 +4,4 @@ Homestead.yaml
 .env
 storage/database.sqlite
 .idea
+public/uploads
