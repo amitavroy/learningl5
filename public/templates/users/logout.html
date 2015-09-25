@@ -1,0 +1,1 @@
+<p>Logout page</p>

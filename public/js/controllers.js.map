@@ -1,0 +1,1 @@
+{"version":3,"sources":["userController.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"controllers.js","sourcesContent":["myApp.controller('userController', ['$scope', function($scope) {\n\n}]);\n"],"sourceRoot":"/source/"}
