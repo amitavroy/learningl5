@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('master');
 });
+
+Route::post('auth', 'UserController@checkAuth');
+Route::resource('user', 'UserController');

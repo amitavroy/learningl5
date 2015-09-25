@@ -21,4 +21,14 @@ elixir(function(mix) {
     mix.scripts([
         'controllers/userController.js'
     ], 'public/js/controllers.js');
+
+    mix.scripts([
+        'models/userModel.js'
+    ], 'public/js/models.js');
+
+    mix.version([
+        'js/app.js',
+        'js/models.js',
+        'js/controllers.js'
+    ]);
 });
