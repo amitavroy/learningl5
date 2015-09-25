@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA","file":"app.js","sourcesContent":["/*This is the main file where angular is defined*/\nvar myApp = angular.module('myApp', ['ngRoute', 'ngCookies']);\n"],"sourceRoot":"/source/"}
