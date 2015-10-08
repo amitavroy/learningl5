@@ -1,5 +1,13 @@
-myApp.factory('userModel', ['$http', function($http) {
+myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
     var userModel = {};
+
+    /**
+     * Check if the credentials are correct from server
+     * and return the promise back to the controller
+     * 
+     * @param  {array} loginData
+     * @return {promise}
+     */
     userModel.doLogin = function(loginData) {
         console.log(loginData);
         return $http({
@@ -14,10 +22,37 @@ myApp.factory('userModel', ['$http', function($http) {
             }
         }).success(function(response) {
             console.log(response);
+            $cookies.put('auth', response);
         }).error(function(data, status, headers) {
             console.log(data, status, headers);
             alert(data);
         });
-    }
+    };
+
+    /**
+     * Return whether the user is logged in or not
+     * based on the cookie set during the login
+     * 
+     * @return {boolean}
+     */
+    userModel.getAuthStatus = function() {
+        var status = $cookies.get('auth');
+        if (status) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+
+    /**
+     * Close the session of the current user
+     * and delete the cookie set for him
+     *
+     * @return boolean
+     */
+    userModel.doUserLogout = function() {
+        $cookies.remove('auth');
+    };
+
     return userModel;
 }])

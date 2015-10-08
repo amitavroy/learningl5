@@ -1,5 +1,6 @@
-myApp.factory('userModel', ['$http', function($http) {
+myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
     var userModel = {};
+
     userModel.doLogin = function(loginData) {
         console.log(loginData);
         return $http({
@@ -14,11 +15,25 @@ myApp.factory('userModel', ['$http', function($http) {
             }
         }).success(function(response) {
             console.log(response);
+            $cookies.put('auth', response);
         }).error(function(data, status, headers) {
             console.log(data, status, headers);
             alert(data);
         });
-    }
+    };
+
+    userModel.getAuthStatus = function() {
+        var status = $cookies.get('auth');
+        if (status) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+
+    userModel.doUserLogout = function() {
+        $cookies.remove('auth');
+    };
     return userModel;
 }])
 
