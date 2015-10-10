@@ -26,32 +26,3 @@ myApp.controller('navController', ['$scope', '$location', '$cookies', 'userModel
         });
     }
 ]);
-
-myApp.controller('userController', ['$scope', '$location', 'userModel', function($scope, $location, userModel) {
-    angular.extend($scope, {
-        login: {
-            username: 'reachme@amitavroy.com',
-            password: 'pass'
-        }
-    });
-
-    angular.extend($scope, {
-        doLogin: function(loginForm) {
-            var data = {
-                email: $scope.login.username,
-                password: $scope.login.password
-            };
-
-            userModel.doLogin(data).then(function() {
-                $location.path('/dashboard');
-            });
-        }
-    });
-}]);
-
-myApp.controller('globalController', ['$scope', function($scope) {
-    $scope.global = {};
-    $scope.global.navUrl = "templates/partials/nav.html";
-}]);
-
-//# sourceMappingURL=controllers.js.map
