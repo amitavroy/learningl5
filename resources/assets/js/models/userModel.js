@@ -22,7 +22,7 @@ myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
             }
         }).success(function(response) {
             console.log(response);
-            $cookies.put('auth', response);
+            $cookies.put('auth', JSON.stringify(response));
         }).error(function(data, status, headers) {
             console.log(data, status, headers);
             alert(data);
@@ -43,6 +43,11 @@ myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
             return false;
         }
     };
+
+    userModel.getUserObject = function() {
+        var user = angular.fromJson($cookies.get('auth'));
+        return user;
+    }
 
     /**
      * Close the session of the current user
