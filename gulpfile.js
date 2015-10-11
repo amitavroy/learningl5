@@ -21,10 +21,12 @@ elixir(function(mix) {
     mix.scripts([
         'controllers/navController.js',
         'controllers/userController.js',
+        'controllers/galleryController.js',
         'controllers/globalController.js'
     ], 'public/js/controllers.js');
 
     mix.scripts([
+        'models/galleryModel.js',
         'models/userModel.js'
     ], 'public/js/models.js');
 

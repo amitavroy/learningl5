@@ -44,6 +44,12 @@ myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
         }
     };
 
+    /**
+     * Return the user object from the cookie
+     * and convert from string to JSON
+     * 
+     * @return {userObject}
+     */
     userModel.getUserObject = function() {
         var user = angular.fromJson($cookies.get('auth'));
         return user;

@@ -1,3 +1,33 @@
+myApp.factory('galleryModel', ['$http', function($http) {
+    return {
+        myGalleries: '',
+        getUserGalleries: function() {
+
+        },
+        fetchUserGalleries: function() {
+            return $http.get(baseUrl + 'gallery').then(function(response) {
+                return response;
+            });
+        },
+        saveGallery: function(galleryData) {
+            return $http({
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                url: baseUrl + 'gallery',
+                method: "POST",
+                data: {
+                    name: galleryData.name
+                }
+            }).success(function(response) {
+
+            }).error(function(data, status, headers) {
+
+            });
+        }
+    };
+}])
+
 myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
     var userModel = {};
 
@@ -44,6 +74,12 @@ myApp.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
         }
     };
 
+    /**
+     * Return the user object from the cookie
+     * and convert from string to JSON
+     * 
+     * @return {userObject}
+     */
     userModel.getUserObject = function() {
         var user = angular.fromJson($cookies.get('auth'));
         return user;

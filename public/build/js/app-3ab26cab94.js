@@ -10,13 +10,13 @@ myApp.config(['$routeProvider', '$locationProvider',
 
         $routeProvider.when('/dashboard', {
             templateUrl: 'templates/users/dashboard.html',
-            controller: 'userController',
+            controller: 'galleryController',
             authenticated: true
         });
 
         $routeProvider.when('/gallery/add', {
             templateUrl: 'templates/gallery/gallery-add.html',
-            controller: 'userController',
+            controller: 'galleryController',
             authenticated: true
         });
 

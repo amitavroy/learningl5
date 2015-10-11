@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 Route::post('auth', 'UserController@checkAuth');
 Route::resource('user', 'UserController');
+Route::resource('gallery', 'GalleryController');
+Route::post('save/file', function () {
+    return 123;
+});
