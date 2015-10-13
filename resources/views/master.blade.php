@@ -28,5 +28,6 @@
     <script type="text/javascript" src="{{url(elixir('js/app.js'))}}"></script>
     <script type="text/javascript" src="{{url(elixir('js/models.js'))}}"></script>
     <script type="text/javascript" src="{{url(elixir('js/controllers.js'))}}"></script>
+    <script type="text/javascript" src="{{url(elixir('js/directives.js'))}}"></script>
 </body>
 </html>

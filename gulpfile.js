@@ -30,9 +30,15 @@ elixir(function(mix) {
         'models/userModel.js'
     ], 'public/js/models.js');
 
+    mix.scripts([
+        'directives/dropzone.js',
+        'directives/gallery/galleryDirective.js'
+    ], 'public/js/directives.js');
+
     mix.version([
         'js/app.js',
         'js/models.js',
-        'js/controllers.js'
+        'js/controllers.js',
+        'js/directives.js'
     ]);
 });

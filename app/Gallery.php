@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Gallery extends Model
@@ -18,6 +19,11 @@ class Gallery extends Model
      * @var array
      */
     protected $fillable = ['name', 'user_id'];
+
+    public function getCreatedAtAttribute($value)
+    {
+        return Carbon::createFromFormat('Y-m-d H:i:s', $value)->diffForHumans();
+    }
 
     /**
      * Relation between Gallery and user
