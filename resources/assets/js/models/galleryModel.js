@@ -42,14 +42,15 @@ myApp.factory('galleryModel', ['$http', '$rootScope', function($http, $rootScope
             });
         },
         deleteGallery: function(id) {
-            /*var galleries = this.myGalleries.$$state.value.data;
-            angular.forEach(galleries, function(value, key) {
-                if (id == value.id) {
-                    console.log(galleries[key]);
-                    delete galleries[key];
-                }
-            });
-            return this.myGalleries.$$state.value.data = galleries;*/
+            console.log('delete gallery ' + id)
+                /*var galleries = this.myGalleries.$$state.value.data;
+                angular.forEach(galleries, function(value, key) {
+                    if (id == value.id) {
+                        console.log(galleries[key]);
+                        delete galleries[key];
+                    }
+                });
+                return this.myGalleries.$$state.value.data = galleries;*/
         }
     };
 }])

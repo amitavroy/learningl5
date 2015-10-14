@@ -5,7 +5,14 @@ myApp.controller('navController', ['$scope', '$location', '$cookies', 'userModel
             user: userModel.getUserObject(),
             navLinkPrimary: [{
                 link: 'Home',
-                url: '/dashboard'
+                url: '/dashboard',
+                subMenu: [{
+                    link: 'View Galleries',
+                    url: '/dashboard'
+                }, {
+                    link: 'Add Gallery',
+                    url: '/gallery/add'
+                }]
             }, {
                 link: 'Add Gallery',
                 url: '/gallery/add'
