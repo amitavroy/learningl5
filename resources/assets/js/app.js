@@ -26,12 +26,6 @@ myApp.config(['$routeProvider', '$locationProvider',
             authenticated: true
         });
 
-        $routeProvider.when('/logout', {
-            templateUrl: 'templates/users/logout.html',
-            controller: 'userController',
-            authenticated: true
-        });
-
         $routeProvider.otherwise('/');
     }
 ]);

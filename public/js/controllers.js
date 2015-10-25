@@ -34,27 +34,28 @@ myApp.controller('navController', ['$scope', '$location', '$cookies', 'userModel
     }
 ]);
 
-myApp.controller('userController', ['$scope', '$location', 'userModel', function($scope, $location, userModel) {
-    angular.extend($scope, {
-        login: {
-            username: 'reachme@amitavroy.com',
-            password: 'pass'
-        }
-    });
+myApp.controller('userController', ['$scope', '$location', 'userModel',
+    function($scope, $location, userModel) {
+        angular.extend($scope, {
+            login: {
+                username: 'reachme@amitavroy.com',
+                password: 'pass'
+            }
+        });
 
-    angular.extend($scope, {
-        doLogin: function(loginForm) {
-            var data = {
-                email: $scope.login.username,
-                password: $scope.login.password
-            };
-
-            userModel.doLogin(data).then(function() {
-                $location.path('/dashboard');
-            });
-        }
-    });
-}]);
+        angular.extend($scope, {
+            doLogin: function(loginForm) {
+                var data = {
+                    email: $scope.login.username,
+                    password: $scope.login.password
+                };
+                userModel.doLogin(data).then(function() {
+                    $location.path('/dashboard');
+                });
+            }
+        });
+    }
+]);
 
 myApp.controller('galleryController', ['$scope', '$routeParams', '$location', 'galleryModel',
     function($scope, $routeParams, $location, galleryModel) {
