@@ -1,0 +1,22 @@
+<div ng-include="global.navUrl"></div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h1 class="page-header">My galleries</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3" ng-repeat="gallery in galleries | orderBy:id:true">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{gallery.name}}</h3>
+            </div>
+            <div class="panel-body">
+                Created by: <strong>{{gallery.user.name}}</strong>
+                <br>
+                Created <strong>{{gallery.created_at}}</strong>
+            </div>
+        </div>
+    </div>
+</div>
