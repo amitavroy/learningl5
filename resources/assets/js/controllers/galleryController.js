@@ -1,10 +1,13 @@
-myApp.controller('galleryController', ['$scope', '$location', 'galleryModel',
-    function($scope, $location, galleryModel) {
+myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$timeout',
+    function($scope, $location, galleryModel, $timeout) {
 
         /*Getting all the galleries*/
         galleryModel.getAllGalleries().success(function(response) {
             $scope.galleries = response;
-            $scope.showGallery = true;
+            $timeout(function() {
+                $scope.galleries = response;
+                $scope.showGallery = true;
+            }, 3000);
         });
 
         /*Variables*/
