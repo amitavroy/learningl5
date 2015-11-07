@@ -26,6 +26,12 @@ myApp.config(['$routeProvider', '$locationProvider',
             authenticated: true
         });
 
+        $routeProvider.when('/gallery/:id', {
+            templateUrl: 'templates/gallery/gallery-single.html',
+            controller: 'galleryController',
+            authenticated: true
+        });
+
         $routeProvider.when('/logout', {
             templateUrl: 'templates/users/logout.html',
             controller: 'userController',
