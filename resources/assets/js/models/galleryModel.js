@@ -14,6 +14,9 @@ myApp.factory('galleryModel', ['$http', function($http) {
         },
         getAllGalleries: function() {
             return $http.get(baseUrl + 'gallery');
+        },
+        getGalleryById: function(id) {
+            return $http.get(baseUrl + 'gallery/' + id);
         }
     };
 }])

@@ -7,12 +7,17 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
             $scope.galleries = response;
             $timeout(function() {
                 $scope.galleries = response;
+                console.log('Galleries loaded', $scope.galleries);
                 $scope.showGallery = true;
             }, 1000);
         });
 
         if ($routeParams.id) {
             console.log('Looking at gallery id' + $routeParams.id);
+            galleryModel.getGalleryById($routeParams.id).success(function(response) {
+                console.log('Gallery details', response);
+                $scope.singleGallery = response;
+            });
         }
 
         /*Variables*/
@@ -20,7 +25,7 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
             newGallery: {},
             errorDiv: false,
             errorMessages: [],
-            singleGalery: {}
+            singleGallery: {}
         });
 
         /*Functions*/

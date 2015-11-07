@@ -27,7 +27,7 @@ myApp.config(['$routeProvider', '$locationProvider',
         });
 
         $routeProvider.when('/gallery/:id', {
-            templateUrl: 'templates/gallery/gallery-add.html',
+            templateUrl: 'templates/gallery/gallery-single.html',
             controller: 'galleryController',
             authenticated: true
         });
