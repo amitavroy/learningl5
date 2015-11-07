@@ -3,6 +3,7 @@
 <head>
     <title>Gallery application in Angular JS</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-lumen.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/dropzone/downloads/css/dropzone.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <script>
         var baseUrl = "{{ url('/') }}/";
@@ -13,6 +14,7 @@
         <div ng-view></div>
     </div>
     <script type="text/javascript" src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('bower_components/dropzone/downloads/dropzone.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bower_components/angular/angular.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('bower_components/angular-route/angular-route.min.js')}}"></script>
