@@ -89,7 +89,16 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
             newGallery: {},
             errorDiv: false,
             errorMessages: [],
-            singleGallery: {}
+            singleGallery: {},
+            dropzoneConfig: {
+                'options': {
+                    'url': 'upload.php'
+                },
+                'eventHandlers': {
+                    'sending': function(file, xhr, formData) {},
+                    'success': function(file, response) {}
+                }
+            }
         });
 
         /*Functions*/
