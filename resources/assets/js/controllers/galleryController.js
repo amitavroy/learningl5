@@ -1,5 +1,6 @@
-myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$timeout',
-    function($scope, $location, galleryModel, $timeout) {
+myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$timeout', '$routeParams',
+
+    function($scope, $location, galleryModel, $timeout, $routeParams) {
 
         /*Getting all the galleries*/
         galleryModel.getAllGalleries().success(function(response) {
@@ -7,14 +8,19 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
             $timeout(function() {
                 $scope.galleries = response;
                 $scope.showGallery = true;
-            }, 3000);
+            }, 1000);
         });
+
+        if ($routeParams.id) {
+            console.log('Looking at gallery id' + $routeParams.id);
+        }
 
         /*Variables*/
         angular.extend($scope, {
             newGallery: {},
             errorDiv: false,
-            errorMessages: []
+            errorMessages: [],
+            singleGalery: {}
         });
 
         /*Functions*/
@@ -30,6 +36,10 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
                     $scope.formSubmitted = true;
                     console.log('Error');
                 }
+            },
+            viewGallery: function(id) {
+                console.log(id);
+                $location.path('/gallery/' + id);
             }
         });
     }
