@@ -1,4 +1,7 @@
 .navbar .make-active {
   font-weight: bold; }
 
+.gallery-container {
+  cursor: pointer; }
+
 /*# sourceMappingURL=app.css.map */

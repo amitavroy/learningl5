@@ -73,7 +73,7 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
                 $scope.galleries = response;
                 console.log('Galleries loaded', $scope.galleries);
                 $scope.showGallery = true;
-            }, 1000);
+            }, 300);
         });
 
         if ($routeParams.id) {
