@@ -28,11 +28,16 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
             singleGallery: {},
             dropzoneConfig: {
                 'options': {
-                    'url': 'upload.php'
+                    'url': baseUrl + 'upload-image'
                 },
                 'eventHandlers': {
-                    'sending': function(file, xhr, formData) {},
-                    'success': function(file, response) {}
+                    'sending': function(file, xhr, formData) {
+                        formData.append('_token', csrfToken);
+                        formData.append('galleryId', $routeParams.id);
+                    },
+                    'success': function(file, response) {
+                        console.log(response);
+                    }
                 }
             }
         });
