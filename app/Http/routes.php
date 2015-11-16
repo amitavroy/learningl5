@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('master');
 });
 
+post('upload-image', 'GalleryController@uploadImage');
+
 Route::post('auth', 'UserController@checkAuth');
 Route::resource('user', 'UserController');
 Route::resource('gallery', 'GalleryController');

@@ -98,4 +98,37 @@ class GalleryController extends Controller
     {
         //
     }
+
+    public function uploadImage(Request $request)
+    {
+        $galleryId = $request->input('galleryId');
+
+        // check if the file exist
+        if (!$request->hasFile('file')) {
+            return response('No file sent.', 400);
+        }
+
+        // check if the file is valid file
+        if (!$request->file('file')->isValid()) {
+            return response('File is not valid.', 400);
+        }
+
+        // validation rules
+        $validator = Validator::make($request->all(), [
+            'galleryId' => 'required|integer',
+            'file' => 'required|mimes:jpeg,jpg,png|max:8000',
+        ]);
+
+        // if validation fails
+        if ($validator->fails()) {
+            return response('There are errors in the form data', 400);
+        }
+
+        // set the file table insert data
+        $mimeType = $request->file('file')->getClientMimeType();
+        $fileSize = $request->file('file')->getClientSize();
+        $fileName = uniqid() . '.' . $request->file('file')->guessExtension();
+
+        return $request->file('file');
+    }
 }
