@@ -1,5 +1,5 @@
 /*This is the main file where angular is defined*/
-var myApp = angular.module('myApp', ['ngRoute', 'ngCookies']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngCookies', 'ui.bootstrap', 'bootstrapLightbox', 'angular-loading-bar']);
 
 myApp.config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {

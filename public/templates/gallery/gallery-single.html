@@ -10,7 +10,18 @@
   <div class="col-sm-12">
     <h2>{{singleGallery.name}}</h2>
     <p><i>Created by <strong>{{singleGallery.user.name}}</strong> {{singleGallery.created_at}}</i></p>
+    <hr>
   </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-3" ng-repeat="(key, value) in singleGallery.images">
+    <a ng-click="openLightboxModal($index)" class="thumbnail">
+      <img ng-src="{{value.thumbUrl}}" class="img-thumbnail123">
+    </a>
+  </div>
+  <br />
+  <br />
 </div>
 
 <div class="row">

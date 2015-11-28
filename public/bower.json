@@ -19,6 +19,8 @@
     "angular-route": "~1.4.6",
     "bootstrap": "~3.3.5",
     "angular-cookies": "~1.4.6",
-    "dropzone": "~4.2.0"
+    "dropzone": "~4.2.0",
+    "angular-bootstrap-lightbox": "~0.10.0",
+    "angular-loading-bar": "~0.8.0"
   }
 }

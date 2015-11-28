@@ -66,8 +66,8 @@ class File extends Model
 
         return [
             'file' => $fileImg,
-            'thumb' => env('S3_URL') . "gallery_{$galleryId}/thumb/" . $filename,
-            'medium' => env('S3_URL') . "gallery_{$galleryId}/medium/" . $filename,
+            'thumbUrl' => env('S3_URL') . "gallery_{$galleryId}/thumb/" . $filename,
+            'url' => env('S3_URL') . "gallery_{$galleryId}/medium/" . $filename,
             'main' => env('S3_URL') . "gallery_{$galleryId}/main/" . $filename,
         ];
     }

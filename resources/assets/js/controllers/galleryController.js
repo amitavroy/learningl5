@@ -1,6 +1,6 @@
-myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$timeout', '$routeParams',
+myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$timeout', '$routeParams', 'Lightbox',
 
-    function($scope, $location, galleryModel, $timeout, $routeParams) {
+    function($scope, $location, galleryModel, $timeout, $routeParams, Lightbox) {
 
         /*Getting all the galleries*/
         galleryModel.getAllGalleries().success(function(response) {
@@ -20,6 +20,12 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
             });
         }
 
+        $scope.$on('imageAdded', function(event, args) {
+            $scope.singleGallery = args;
+            console.log('Inside event', $scope.singleGallery);
+            $scope.$apply();
+        });
+
         /*Variables*/
         angular.extend($scope, {
             newGallery: {},
@@ -37,9 +43,23 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
                     },
                     'success': function(file, response) {
                         console.log(response);
+                        $scope.singleGallery.images.push(response);
+                        console.log($scope.singleGallery);
+                        $scope.$emit('imageAdded', $scope.singleGallery);
                     }
                 }
-            }
+            },
+            images: [{
+                'url': '1.jpg',
+                'caption': 'Optional caption',
+                'thumbUrl': 'thumb1.jpg' // used only for this example
+            }, {
+                'url': '2.gif',
+                'thumbUrl': 'thumb2.jpg'
+            }, {
+                'url': '3.png',
+                'thumbUrl': 'thumb3.png'
+            }]
         });
 
         /*Functions*/
@@ -59,6 +79,9 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
             viewGallery: function(id) {
                 console.log(id);
                 $location.path('/gallery/' + id);
+            },
+            openLightboxModal: function(index) {
+                Lightbox.openModal($scope.singleGallery.images, index);
             }
         });
     }
