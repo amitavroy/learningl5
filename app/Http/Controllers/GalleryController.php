@@ -7,7 +7,6 @@ use App\Gallery;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
@@ -127,31 +126,8 @@ class GalleryController extends Controller
             return response('There are errors in the form data', 400);
         }
 
-        // set the file table insert data
-        $mimeType = $request->file('file')->getClientMimeType();
-        $fileSize = $request->file('file')->getClientSize();
-        $fileName = 'gallery_' . $request->input('galleryId') . '_' . uniqid() . '.' . $request->file('file')->guessExtension();
-
-        $s3 = Storage::disk('s3');
-        if ($s3->put($fileName, file_get_contents($request->file('file')), 'public')) {
-            $file = File::create([
-                'file_name' => $fileName,
-                'mime_type' => $mimeType,
-                'file_size' => $fileSize,
-                'file_path' => env('S3_URL') . $fileName,
-                'type' => 's3',
-            ]);
-
-            DB::table('gallery_images')->insert([
-                'gallery_id' => $request->input('galleryId'),
-                'file_id' => $file->id,
-            ]);
-
-            $fileImg = File::find($file->id);
-            $fileImg->status = 1;
-            $fileImg->save();
-        }
-
-        return $request->file('files');
+        $fileObj = new File;
+        $fileUpload = $fileObj->uploadThumbAndMainImage($request);
+        return response($fileUpload, 201);
     }
 }
