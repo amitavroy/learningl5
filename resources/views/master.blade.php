@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/dropzone/dist/dropzone.css') }}">
     <link rel="stylesheet" href="{{ asset('bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css') }}">
     <link rel="stylesheet" href="{{asset('bower_components/angular-loading-bar/build/loading-bar.min.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <script>
         var baseUrl = "{{ url('/') }}/";

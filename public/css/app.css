@@ -4,4 +4,21 @@
 .gallery-container {
   cursor: pointer; }
 
+.directive-image {
+  width: 100%;
+  height: auto; }
+
+.cursor {
+  cursor: pointer; }
+
+.gallery-image-single {
+  position: relative; }
+  .gallery-image-single .delete-icon {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    display: none; }
+  .gallery-image-single:hover .delete-icon {
+    display: block; }
+
 /*# sourceMappingURL=app.css.map */

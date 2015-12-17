@@ -17,6 +17,19 @@ myApp.factory('galleryModel', ['$http', function($http) {
         },
         getGalleryById: function(id) {
             return $http.get(baseUrl + 'gallery/' + id);
+        },
+        deleteSingleImage: function(data) {
+            return $http({
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                url: baseUrl + 'delete-single-image',
+                method: "POST",
+                data: {
+                    id: data.imageId,
+                    galleryId: data.galleryId
+                }
+            });
         }
     };
 }])

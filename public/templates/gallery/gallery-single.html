@@ -15,10 +15,13 @@
 </div>
 
 <div class="row">
-  <div class="col-xs-3" ng-repeat="(key, value) in singleGallery.images">
+  <div class="col-xs-3 gallery-image-single" ng-repeat="(key, value) in singleGallery.images">
     <a ng-click="openLightboxModal($index)" class="thumbnail">
-      <img ng-src="{{value.thumbUrl}}" class="img-thumbnail123">
+      <div>
+        <img ng-src="{{value.thumbUrl}}" class="directive-image">
+      </div>
     </a>
+    <div style="text-align: center" class="delete-icon"><i class="fa fa-trash cursor" ng-click="deleteImage(value.file_id)"></i></div>
   </div>
   <br />
   <br />

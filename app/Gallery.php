@@ -43,6 +43,7 @@ class Gallery extends Model
         $finalData = [];
         foreach ($files as $key => $file) {
             $finalData[$key] = [
+                'file_id' => $file->id,
                 'thumbUrl' => env('S3_URL') . "gallery_{$galleryId}/thumb/" . $file->file_name,
                 'url' => env('S3_URL') . "gallery_{$galleryId}/medium/" . $file->file_name,
                 'main' => env('S3_URL') . "gallery_{$galleryId}/main/" . $file->file_name,

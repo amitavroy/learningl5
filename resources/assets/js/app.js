@@ -76,3 +76,34 @@ myApp.directive('dropzone', function() {
         });
     };
 });
+
+myApp.directive('imageonload', function() {
+    return {
+        restrict: 'A',
+        scope: {
+            class: '@'
+        },
+        link: function($scope, element, attrs) {
+            element.bind('load', function() {
+                $scope.imageLoaded = 'check';
+                console.log('image is loaded outer');
+                $scope.$apply();
+            });
+        }
+    };
+});
+
+myApp.directive('imgLoad', function() {
+    return {
+        restrict: 'E',
+        template: '<img ng-src="{{ actualLink }}" class="directive-image" />',
+        scope: {
+            actualLink: '@'
+        },
+        link: function($scope, element, attrs) {
+            element.bind('load', function() {
+                console.log('image is loaded inner');
+            });
+        }
+    };
+});

@@ -130,11 +130,20 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
                 }
             },
             viewGallery: function(id) {
-                console.log(id);
                 $location.path('/gallery/' + id);
             },
             openLightboxModal: function(index) {
                 Lightbox.openModal($scope.singleGallery.images, index);
+            },
+            deleteImage: function(imageId) {
+                var data = {
+                    imageId: imageId,
+                    galleryId: $routeParams.id
+                };
+                galleryModel.deleteSingleImage(data).success(function(response) {
+                    console.log('response', response);
+                    $scope.singleGallery = response;
+                });
             }
         });
     }

@@ -8,3 +8,24 @@
 .gallery-container {
     cursor: pointer;
 }
+.directive-image {
+    width: 100%;
+    height: auto;
+}
+.cursor {
+    cursor: pointer;
+}
+.gallery-image-single {
+    position: relative;
+    .delete-icon {
+        position: absolute;
+        bottom: 30px;
+        right: 50%;
+        display: none;
+    }
+    &:hover {
+        .delete-icon {
+            display: block;
+        }
+    }
+}
