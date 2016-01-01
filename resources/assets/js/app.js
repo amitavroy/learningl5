@@ -17,18 +17,37 @@ myApp.config(['$routeProvider', '$locationProvider',
         $routeProvider.when('/gallery/view', {
             templateUrl: 'templates/gallery/gallery-view.html',
             controller: 'galleryController',
+            resolve: {
+                data: function(galleryModel) {
+                    return {
+                        galleries: galleryModel.getAllGalleries()
+                    };
+                }
+            },
             authenticated: true
         });
 
         $routeProvider.when('/gallery/add', {
             templateUrl: 'templates/gallery/gallery-add.html',
             controller: 'galleryController',
+            resolve: {
+                data: function() {
+                    return 'single';
+                }
+            },
             authenticated: true
         });
 
         $routeProvider.when('/gallery/:id', {
             templateUrl: 'templates/gallery/gallery-single.html',
             controller: 'galleryController',
+            resolve: {
+                data: function(galleryModel, $route) {
+                    return {
+                        singleGallery: galleryModel.getGalleryById($route.current.params.id)
+                    };
+                }
+            },
             authenticated: true
         });
 

@@ -62,23 +62,22 @@ myApp.controller('navController', ['$scope', '$location', 'userModel', function(
     });
 }]);
 
-myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$timeout', '$routeParams', 'Lightbox',
+myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$timeout', '$routeParams', 'Lightbox', 'data',
 
-    function($scope, $location, galleryModel, $timeout, $routeParams, Lightbox) {
+    function($scope, $location, galleryModel, $timeout, $routeParams, Lightbox, data) {
 
         /*Getting all the galleries*/
-        galleryModel.getAllGalleries().success(function(response) {
-            $scope.galleries = response;
-            $timeout(function() {
+        if (data && data.galleries != undefined) {
+            data.galleries.success(function(response) {
                 $scope.galleries = response;
                 console.log('Galleries loaded', $scope.galleries);
                 $scope.showGallery = true;
-            }, 300);
-        });
+            });
+        }
 
-        if ($routeParams.id) {
-            console.log('Looking at gallery id' + $routeParams.id);
-            galleryModel.getGalleryById($routeParams.id).success(function(response) {
+        /*Fetch a single gallery on the view gallery page*/
+        if (data && data.singleGallery != undefined) {
+            data.singleGallery.success(function(response) {
                 console.log('Gallery details', response);
                 $scope.singleGallery = response;
             });
