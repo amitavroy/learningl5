@@ -18,6 +18,9 @@ myApp.controller('navController', ['$scope', '$location', 'userModel', function(
         }, {
             link: 'Add Gallery',
             url: '/gallery/add'
+        }, {
+            link: 'Invitations',
+            url: '/invitation/list'
         }]
     });
 

@@ -51,6 +51,17 @@ myApp.config(['$routeProvider', '$locationProvider',
             authenticated: true
         });
 
+        $routeProvider.when('/invitation/list', {
+            templateUrl: 'templates/invitation/invitation-list.html',
+            controller: 'invitationController',
+            resolve: {
+                data: function() {
+                    return 'blank';
+                }
+            },
+            authenticated: true
+        });
+
         $routeProvider.when('/logout', {
             templateUrl: 'templates/users/logout.html',
             controller: 'userController',

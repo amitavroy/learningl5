@@ -45,6 +45,9 @@ myApp.controller('navController', ['$scope', '$location', 'userModel', function(
         }, {
             link: 'Add Gallery',
             url: '/gallery/add'
+        }, {
+            link: 'Invitations',
+            url: '/invitation/list'
         }]
     });
 
@@ -143,6 +146,24 @@ myApp.controller('galleryController', ['$scope', '$location', 'galleryModel', '$
                     console.log('response', response);
                     $scope.singleGallery = response;
                 });
+            }
+        });
+    }
+]);
+
+myApp.controller('invitationController', ['$scope',
+    function($scope) {
+        /*variables*/
+        angular.extend($scope, {
+            newInvite: {}
+        });
+
+        /*methods*/
+        angular.extend($scope, {
+            sendInvite: function(sendInviteForm) {
+                if (sendInviteForm.$valid) {
+                    console.log('newInvite', $scope.newInvite);
+                }
             }
         });
     }

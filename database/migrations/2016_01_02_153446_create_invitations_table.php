@@ -17,6 +17,7 @@ class CreateInvitationsTable extends Migration
             $table->string('email');
             $table->string('invite_code');
             $table->integer('inviter_id')->unsigned();
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }
