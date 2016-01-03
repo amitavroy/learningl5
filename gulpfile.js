@@ -22,7 +22,8 @@ elixir(function(mix) {
         'controllers/userController.js',
         'controllers/globalController.js',
         'controllers/navController.js',
-        'controllers/galleryController.js'
+        'controllers/galleryController.js',
+        'controllers/invitationController.js'
     ], 'public/js/controllers.js');
 
     mix.scripts([

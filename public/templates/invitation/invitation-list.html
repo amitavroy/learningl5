@@ -1,0 +1,42 @@
+<div ng-include="global.navUrl"></div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h1>My Invitations</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-7">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Sent on</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-sm-5">
+        <form name="sendInviteForm" ng-submit="sendInvite(sendInviteForm)">
+            <div class="form-group">
+                <label>Invite Email</label>
+                <input type="email" name="email" ng-model="newInvite.email"
+                id="email" placeholder="Enter the email of the user"
+                class="form-control"/>
+            </div>
+
+            <button class="btn btn-success">Send</button>
+        </form>
+    </div>
+</div>
