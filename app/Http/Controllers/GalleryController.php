@@ -41,12 +41,12 @@ class GalleryController extends Controller
      */
     public function store(Request $request)
     {
-        $validaor = Validator::make($request->all(), [
+        $validator = Validator::make($request->all(), [
             'name' => 'required|min:3',
         ]);
 
-        if ($validaor->fails()) {
-            return response($validaor->errors()->all(), 422);
+        if ($validator->fails()) {
+            return response($validator->errors()->all(), 422);
         }
 
         $gallery = Gallery::create([
