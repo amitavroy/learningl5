@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 post('upload-image', 'GalleryController@uploadImage');
 
+Route::get('get-invitations', 'InvitationController@getInvitations');
 Route::post('auth', 'UserController@checkAuth');
 Route::resource('user', 'UserController');
 Route::resource('gallery', 'GalleryController');

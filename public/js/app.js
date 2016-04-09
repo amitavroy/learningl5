@@ -55,8 +55,10 @@ myApp.config(['$routeProvider', '$locationProvider',
             templateUrl: 'templates/invitation/invitation-list.html',
             controller: 'invitationController',
             resolve: {
-                data: function() {
-                    return 'blank';
+                data: function(invitationModel) {
+                    return {
+                        myInvitations: invitationModel.getInvitations()
+                    };
                 }
             },
             authenticated: true

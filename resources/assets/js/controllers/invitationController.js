@@ -1,8 +1,19 @@
-myApp.controller('invitationController', ['$scope',
-    function($scope) {
+myApp.controller('invitationController', ['$scope', 'data',
+    function($scope, data) {
+        /*getting all invites*/
+        if (data && data.myInvitations != undefined) {
+            data.myInvitations.success(function(response) {
+                $scope.myInvitations = response;
+                console.log('Invites loaded', $scope.myInvitations);
+                $scope.showInvites = true;
+            });
+        }
+
         /*variables*/
         angular.extend($scope, {
-            newInvite: {}
+            showInvites: false,
+            newInvite: {},
+            myInvitations: {}
         });
 
         /*methods*/

@@ -28,7 +28,8 @@ elixir(function(mix) {
 
     mix.scripts([
         'models/userModel.js',
-        'models/galleryModel.js'
+        'models/galleryModel.js',
+        'models/invitationModel.js'
     ], 'public/js/models.js');
 
     mix.version([

@@ -102,4 +102,12 @@ myApp.factory('galleryModel', ['$http', function($http) {
     };
 }])
 
+myApp.factory('invitationModel', ['$http', function($http) {
+    return {
+        getInvitations: function() {
+            return $http.get(baseUrl + 'get-invitations');
+        }
+    };
+}])
+
 //# sourceMappingURL=models.js.map
